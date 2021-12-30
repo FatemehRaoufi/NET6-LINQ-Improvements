@@ -33,73 +33,10 @@ namespace NET6LINQImprovements.Controllers
             
         }
 
-        // GET: OrDefaultEnhancements/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: OrDefaultEnhancements/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: OrDefaultEnhancements/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: OrDefaultEnhancements/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: OrDefaultEnhancements/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: OrDefaultEnhancements/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: OrDefaultEnhancements/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        
     }
 }
+
+//Resources:
+//https://dotnetcoretutorials.com/2021/09/02/linq-ordefault-enhancements-in-net-6/
+//https://blog.elmah.io/new-linq-extensions-in-net-6-and-benchmarks/

@@ -1,0 +1,29 @@
+﻿@model NET6LINQImprovements.Models.ShowResultViewModel
+@{
+    ViewData["Title"] = "View";
+}
+
+@{
+    <h2>View</h2>
+    <div>
+
+        <p>
+            <label>Max:</label>
+            <input asp-for="MaxBy" readonly="readonly" />
+
+
+            <br />
+        <p>
+            <label><b>MaxBy:</b></label>
+            <br />
+            <label>Name:</label>
+            <input asp-for="Name" readonly="readonly" />
+        </p>
+        <br />
+        <p>
+            <label>Age:</label>
+            <input asp-for="Age" readonly="readonly" />
+        </p>
+
+    </div>
+}
