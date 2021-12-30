@@ -7,5 +7,6 @@ namespace NET6LINQImprovements.Models
 
         public string? ResultwithDefault { get; set; }
 
+
     }
 }
