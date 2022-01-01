@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using NET6LINQImprovements.Models;
 
-namespace NET6_LINQ_Improvements.Controllers
+namespace NET6LINQImprovements.Controllers
 {
     public class MaxbyMinByController : Controller
     {
@@ -56,8 +56,8 @@ namespace NET6_LINQ_Improvements.Controllers
             //...................................................
             var viewModel = new ShowResultViewModel
             {
-                MaxBy = max.ToString(),
-                MinBy = min.ToString()
+                Result1 = max.ToString(),
+                Result2 = min.ToString()
             };
 
 

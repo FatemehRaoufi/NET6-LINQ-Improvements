@@ -4,17 +4,33 @@
 }
 
 @{
-    <h2>View</h2>
-    <div>
+    <h2>MaxBy / MinBy in .Net6</h2>
+   <br />
+    <div class="container-fluid">
+        <form>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Max By:</span>
+                </div>
+                <input asp-for="Result1" type="text" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Min By:</span>
+                </div>
+                <input asp-for="Result2" type="text" class="form-control">
+            </div>
+        </form>
+    </div>
    
-    <p>
-    <label>MaxBy:</label>
-    <input asp-for="MaxBy" id="txtResult" readonly="readonly"/>
-    <br />
-    </p>
-    <p>
-    <label>MinBy:</label>
-    <input asp-for="MinBy" id="txtResultwithDefault" readonly="readonly"/>
-</p> 
-</div>
+//    <p>
+//    <label>Result1:</label>
+//    <input asp-for="Result1" id="txtResult" readonly="readonly"/>
+//    <br />
+//    </p>
+//    <p>
+//    <label>Result2:</label>
+//    <input asp-for="Result2" id="txtResult2" readonly="readonly"/>
+//</p> 
+//</div>
 }

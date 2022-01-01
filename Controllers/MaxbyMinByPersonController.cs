@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using NET6LINQImprovements.Models;
 
-namespace NET6_LINQ_Improvements.Controllers
+namespace NET6LINQImprovements.Controllers
 {
     public class MaxbyMinByPerson : Controller
     {
@@ -26,7 +26,7 @@ namespace NET6_LINQ_Improvements.Controllers
             var maxby = people.MaxBy(x => x.Age); //Outputs Person (Jane Smith)
             var viewModel = new ShowResultViewModel
             {
-                MaxBy = max.ToString(),
+                Result1 = max.ToString(),
                 Name = maxby.Name.ToString(),
                 Age = maxby.Age.ToString()
             };

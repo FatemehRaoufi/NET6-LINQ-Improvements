@@ -16,7 +16,7 @@ namespace NET6LINQImprovements.Controllers
                             .FirstOrDefault();
 
             var numbers1 = new List<int>() { 3, 1, 4, 1, 5, 9 };
-            var resultwithDefault = Enumerable
+            var Result2 = Enumerable
                             .Range(0, numbers.Count())
                             .Where(i => numbers[i] == 6)
                             .FirstOrDefault(-1);
@@ -25,8 +25,8 @@ namespace NET6LINQImprovements.Controllers
 
             var viewModel = new ShowResultViewModel
             {
-                Result = result.ToString(),
-                ResultwithDefault = resultwithDefault.ToString()
+                Result1 = result.ToString(),
+                Result2 = Result2.ToString()
             };
 
             return View(viewModel);
