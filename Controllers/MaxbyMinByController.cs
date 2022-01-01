@@ -68,3 +68,4 @@ namespace NET6LINQImprovements.Controllers
         
     }
 }
+//https://dotnetcoretutorials.com/2021/09/09/maxby-minby-in-net-6/?series

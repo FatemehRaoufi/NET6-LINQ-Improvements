@@ -49,3 +49,4 @@ namespace NET6LINQImprovements.Controllers
       
     }
 }
+//https://dotnetcoretutorials.com/2021/08/12/ienumerable-chunk-in-net-6/

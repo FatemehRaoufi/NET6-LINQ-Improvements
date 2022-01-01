@@ -1,0 +1,53 @@
+﻿@model NET6LINQImprovements.Models.ShowResultViewModel
+@{
+    ViewData["Title"] = "View";
+}
+
+@{
+    <h2>Date and Time Structures in .Net6</h2>
+    <br />
+    <div class="container-fluid">
+        <form>
+         <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Local DateTime:</span>
+                </div>
+                <input asp-for="Result1" type="text" class="form-control">
+            </div>
+             <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Min value of DateOnly:</span>
+                </div>
+                <input asp-for="Result2" type="text" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Min Value of TimeOnly:</span>
+                </div>
+                <input asp-for="Result3" type="text" class="form-control">
+            </div>
+             <br/>
+            <span class="input-group-text">Is Between:</span>
+             <br/>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Start Time (is a TimeOnly type):</span>
+                </div>
+                <input asp-for="Result4" type="text" class="form-control">
+            </div>
+             <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">End Time (is a TimeOnly type):</span>
+                </div>
+                <input asp-for="Result5" type="text" class="form-control">
+            </div>
+             <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">"12:00 AM" is between Start Time and End Time (Using IsBetween):</span>
+                </div>
+                <input asp-for="Result6" type="text" class="form-control">
+            </div>
+            
+        </form>
+    </div>
+}
