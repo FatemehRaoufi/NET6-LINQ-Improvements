@@ -11,10 +11,11 @@ namespace NET6LINQImprovements.Controllers
         {
             //Using DateTime
             DateTime dateTime = DateTime.Now;//Outputs "Local"
-
+            DateTimeKind kind = dateTime.Kind; //Outputs "Local"
             //Using DateOnly
             DateOnly date = DateOnly.MinValue;//Outputs 01/01/0001 (With no Time)
-         
+            
+          
             //Using TimeOnly
             TimeOnly time = TimeOnly.MinValue;//Outputs 12:00 AM
            //-------------
@@ -45,3 +46,4 @@ namespace NET6LINQImprovements.Controllers
 }
 
 //https://dotnetcoretutorials.com/2021/09/07/dateonly-and-timeonly-types-in-net-6/?series
+//https://www.infoq.com/news/2021/04/Net6-Date-Time/
