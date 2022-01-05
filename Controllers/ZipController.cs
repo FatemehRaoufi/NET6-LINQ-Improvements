@@ -16,7 +16,7 @@ namespace NET6LINQImprovements.Controllers
             var test = numbers.Zip(months).Zip(seasons);
             string Result = "";
             foreach ((int, string, string) zipped in numbers.Zip(months, seasons))
-            {               
+            {
                 Result = Result + zipped.Item1 + ": " + zipped.Item2.ToString() + " , " + zipped.Item3.ToString() + " | ";
             }
 
@@ -29,6 +29,6 @@ namespace NET6LINQImprovements.Controllers
             return View(viewModel);
         }
 
-       
+
     }
 }

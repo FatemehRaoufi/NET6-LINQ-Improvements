@@ -1,0 +1,20 @@
+﻿@model NET6LINQImprovements.Models.ShowResultViewModel
+@{
+    ViewData["Title"] = "View";
+}
+
+@{
+    <h2>Index In ElementAt method in .Net6</h2>
+    <br />
+    <div class="container-fluid">
+        <form>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Last number from this list { 1, 2, 3, 4, 5 } is:</span>
+                </div>
+                <input asp-for="Result1" type="text" class="form-control">
+            </div>
+           
+        </form>
+    </div>
+}

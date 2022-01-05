@@ -10,12 +10,12 @@ namespace NET6LINQImprovements.Controllers
         public ActionResult Index()
         {
             PriorityQueue<string, string> bankQueue = new PriorityQueue<string, string>(new TitleComparer());
-            
+
             bankQueue.Enqueue("John Jones", "Sir");
             bankQueue.Enqueue("Jim Smith", "Mr");
             bankQueue.Enqueue("Sam Poll", "Mr");
             bankQueue.Enqueue("Edward Jones", "Sir");
-           
+
             //Console.WriteLine("Clearing Customers Now");
 
             string Result = "";
