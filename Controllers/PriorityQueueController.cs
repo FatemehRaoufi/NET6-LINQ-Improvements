@@ -31,9 +31,6 @@ namespace NET6LINQImprovements.Controllers
 
             };
 
-
-
-
             return View(viewModel);
         }
 
